@@ -1,0 +1,292 @@
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nth-custom: 11;
+}
+
+header {
+    background-color: #3616ecd2;
+    box-shadow: 0 2px 4px rgba(24, 224, 238, 0.1);
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    position: relative;
+}
+
+header .highlight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Honk', cursive;
+    font-size: 6em;
+}
+
+}
+
+header .subtitle {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0.5em 0 0 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+}
+
+nav {
+    background-color: #0e0000f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0rem 0;
+    position: sticky;
+    top: 1rem;
+    z-index: 1;
+}
+
+nav ul.center {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1;
+}
+
+nav a {
+    color: #7133d4;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    margin-left: 1rem;
+    margin-right: calc(1rem * var(--nth-custom));
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+section {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+section p {
+    font-size: 1.2em;
+    margin: 1rem 0 0 0;
+}
+
+section#menu {
+    text-align: center;
+}
+
+section#menu img {
+    height: 30vmin;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.testimonials-section {
+    /* Change the font family and associated parameters for the testimonial section */
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem; /* Even larger font size */
+    line-height: 1.3;
+    color: rgb(7, 3, 12);
+    background-color: #e71295;
+    padding: 3rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.testimonials-section p {
+    margin: 0;
+}
+
+<style>
+#testimonials {
+    margin-bottom: 10px; /* Adjust the margin bottom as needed */
+}
+
+#connect {
+    margin-top: 10px; /* Adjust the margin top as needed */
+}
+</style>
+
+/* Adding new styles for the connect section */
+section#connect {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section#connect h2 {
+    font-size: 2.5rem;
+    color: #3F3D56;
+    margin-bottom: 1rem;
+}
+
+section#connect a {
+    display: block;
+    font-size: 1.5rem;
+    color: #521aeb;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+section#connect h3 {
+    font-size: 1.5rem;
+    color: #3F3D56;
+    margin: 2rem 0;
+}
+
+section#connect p {
+    font-size: 1.1rem;
+    color: #3F3D56;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+section#connect a:last-child {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Original styles */
+section#connect form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+}
+
+section#connect input,
+section#connect textarea {
+    resize: vertical;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+
+footer {
+    background-color: #2522ec;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    
+    nav ul.center {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: #74e617e3;
+        font-size: 10em;
+        text-decoration: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        background-color: #FAFAFA;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .section {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        margin-bottom: 2rem;
+        line-height: 1.3;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 0.25rem;
+        outline: none;
+        transition: border-color 0.2s ease;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border-color: #4CAF50;
+    }
+    
+    textarea {
+        height: 10rem;
+    }
+    
+    button[type="submit"] {
+        display: block;
+        width: fit-content;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: darkgreen;
+    }
+    
